@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    #cover_image{
+            width: 100%;
+        }
+        #banner{
+            paddding-top:1em;
+        }
+
+        #home{
+            float: right;
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            font-size: 30px;
+            border-radius: 50%;
+
+            padding-left: 8px;
+            padding-top: 5px;
+            margin-right: -250px;
+            margin-top: -120px;
+        }
+        #logo{
+        width:120px;
+    }
+    h2{
+        color:#fff;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    #herbarium{
+        color:#fff;
+        font-size: 30px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .panel-body h1 {
+        text-align: center;
+        font-size: 50px;
+        color: #000;
+    }
+
+    .panel-body h2 , .well h2{
+        color:#000;
+    }
+    .panel-heading button{
+        width: auto;
+        margin-left: 40%;
+    }
+    #banner{
+        background-image: url('/static/images/tree.jpg');
+        background-size: cover;
+        color: #fff;
+        font-size: 400px;
+        {#margin-top: 1000px;#}
+    }
+    #herbarium{
+        color:#fff;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 25px;
+        margin-left: 150px;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    #description{
+        background-image: url('/static/images/final.jpg');
+        min-height: 600px;
+        background-size: cover;
+        margin-bottom: 1em;
+        margin-left: 50px;
+    }
+    .media-heading{
+        margin-left: 50px;
+        font-size:30px;
+        font-weight: bold;
+    }
+
+    #logo{
+        width:150px;
+        margin-left: 0px;
+    }
+    h2{
+        color:#fff;
+        padding-top: 20px;
+    }
+    #caption{
+        font-size: 40px;
+        text-shadow: 3px 3px #000;
+    }
+    .sidenav li{
+              font-size: 20px;
+          }
+
+      @media (max-width: 576px) {
+          h2{
+              font-size: 10px;
+              padding:0px;
+          }
+          #herbarium{
+        color:#fff;
+        font-size: 8px;
+        font-family: "Times New Roman", Times, serif;
+              margin-left: 30px;
+    }
+          #description{
+                margin-left: 0px;
+                {#width: 100px;#}
+              min-height: 280px;
+    }
+          #logo{
+              width: 70px;
+              margin-top: 0px;
+          }
+          #caption{
+            font-size: 20px
+        }
+
+        .media-heading{
+        margin-top: 5px;
+        font-size:9px;
+        margin-left:10px;
+
+    }
+          .sidenav h2{
+              font-size: 30px;
+          }
+
+          .sidenav li{
+              font-size: 20px;
+          }
+
+          .media{
+              margin-left: -20px;
+          }
+          .panel-body h1{
+              font-size: 20px;
+          }
+          .panel-heading button{
+        width: auto;
+        margin-left: 25%;
+         }
+          #home{
+            float: left;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            font-size: 14px;
+            border-radius: 50%;
+              margin-left: 99%;
+              margin-top: -70px;
+            padding-left: 5px;
+            padding-top: 2px;
+
+        }
+          .sidenav {
+      background-color: #f1f1f1;
+      height: auto;
+              margin-right: 10px;
+              margin-bottom:20px;
+    }
+      }
+  </style>
+</head>
+<body>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: #7b0000;margin-bottom: 20px;" >
+     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 col-lg-offset-1 " >
+        <div class="media" style="margin-top: 40px; margin-bottom: 10px;">
+            <div class="media-left media-middle">
+              <img src="/static/images/logo_white.png" class="media-object" id="logo" >
+            </div>
+            <div class="media-body">
+              <h2 class="media-heading" style="">GOVERNMENT ENGINEERING COLLEGE THRISSUR</h2>
+                <h2  id="herbarium" style="color:#fff">HERBARIUM - Collection of college magazines</h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="jumbotron" id="banner">
+  <div class="container text-center">
+    <h2 style="" id="caption">കടലാസു  തുണ്ടുകളിൽ  ഉണങ്ങിയ ഓർമയുടെ വേരുകൾ </h2>
+
+  </div>
+</div>
+
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: auto;}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #e8b36d;
+      height: 600px;
+        margin-left: 10px;
+    }
+    .jumbotron{
+        margin-bottom: 10px;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+
+      }
+      .row.content {height: auto;}
+    }
+
+  </style>
+
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav" style="text-align: center;">
+      <h2 style="color: #000">തിരനോട്ടം</h2>
+      <ul class="nav nav-pills nav-stacked" id="side_navbar">
+
+      </ul><br>
+
+    </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 "  id="description">
+                <h2 style="color: #fff;text-shadow: 0.7px 0.7px  #230000"></h2>
+{#          <img src="/static/images/sig.png" style="width: 150px;float: right">#}
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " >
+                <h4 style="color:#000; text-align: center;">Created by Sreeraj S , S5 CSE</h4>
+{#          <img src="/static/images/sig.png" style="width: 150px;float: right">#}
+      </div>
+
+
+
+
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        var nav = $('#side_navbar');
+        {% for year in data %}
+            var list_elements = $('<li></li>');
+            var atag  = $('<a></a>');
+            atag.text('{{ year.year }}');
+            atag.attr('href' , '/home/magazine/' + '{{ year.id }}')
+            list_elements.append(atag);
+            nav.append(list_elements);
+        {% endfor %}
+
+
+    </script>
+
+
+
+</body>
+</html>
