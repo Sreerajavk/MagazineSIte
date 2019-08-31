@@ -1,0 +1,25 @@
+#center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-head {
+  margin-left: -40px;
+  margin-top: 50px;
+}
+
+#xplore {
+  width: auto;;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.btn{
+  border-radius : 30px;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}

@@ -20,7 +20,7 @@ def home(request):
         all_years['id'] = year.id
         all_years['year'] = year.year
         year_details.append(all_years)
-    return  render(request , 'home.html' , {'data': year_details})
+    return  render(request , 'home2.html' , {'data': year_details})
 
 def getdetails(request ,id):
 
@@ -33,7 +33,7 @@ def getdetails(request ,id):
     details['document_link'] = magazine_info.document_link
     details['image'] = magazine_info.cover_image
 
-    return render(request , 'details.html' , details)
+    return render(request , 'details2.html' , details)
 
 def pdf_view(request):
     with open('/home/sreeraj/Documents/study/s5 materials/sc1.pdf', 'r') as pdf:
