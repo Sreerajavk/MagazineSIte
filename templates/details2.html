@@ -13,45 +13,63 @@
     <link rel="stylesheet" href="/static/css/Highlight-Phone.css">
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/Social-Icons.css">
+
+    <style>
+        .social-icons i {
+  font-size: 32px;
+    background-color: rgba(92, 51, 16, 0.81);
+    display: inline-block;
+    color: #fff;
+    margin: 0 10px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #c8ced7;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 60px;
+}
+
+
+    </style>
 </head>
 
 <body style="background-color: #fff;color: #000;">
-            <div class="row">
-                <div class="col-md-6 col-12" id="header-left">
-                    <svg height="150px" width="150px" id="circle">
+<div class="row">
+    <div class="col-md-6 col-12" id="header-left">
+        <svg height="150px" width="150px" id="circle">
 
-                         <circle cx="50" cy="50" r="40" stroke="#e3e3e3" stroke-width="3" fill="#e3e3e3" />
+            <circle cx="50" cy="50" r="40" stroke="#e3e3e3" stroke-width="3" fill="#e3e3e3"/>
 
-                    </svg>
-                    <h1 id="library">Library</h1>
-                </div>
-                <div class="col-md-6 col-12" id="right-header">
-                    <img src="/static/img/Herbarium.png" id="herbarium_image">
-                    <p>Government Engineering college Thrissur</p>
-                </div>
-            </div>
-
-
-            <div class="container" style="margin-top: 30px;" >
-            <div class="row">
-                <div class="col-md-5 col-12 offset-md-3" id="content">
-                    <h2>{{ title }}</h2>
-                    <p style="float: right;margin-top: -30px;">{{ year }}</p>
-                    <hr style="background-color: #fff;">
-                    <p>{{ editor_name }} S&nbsp;</p>
-                    <p>{{ description }}</p>
-                </div>
-                <div class="col-md-2 offset-md-1 col-12" style="display:flex;">
-                    <img src="{{ image.url }}" style="max-height: 300px;" />
-                </div>
-                </div>
-  </div>
+        </svg>
+        <h1 id="library">Library</h1>
     </div>
-    <div class="social-icons"><a href="{{ document_link }}"><i class="la la-download"></i></a></div>
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="/static/js/grayscale.js"></script>
+    <div class="col-md-6 col-12" id="right-header">
+        <img src="/static/img/Herbarium.png" id="herbarium_image">
+        <p>Government Engineering college Thrissur</p>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-md-5 col-12 offset-md-3" id="content">
+            <h2>{{ title }}</h2>
+            <p style="float: right;margin-top: -30px;">{{ year }}</p>
+            <hr style="background-color: #fff;">
+            <p>{{ editor_name }} S&nbsp;</p>
+            <p>{{ description }}</p>
+        </div>
+        <div class="col-md-2 offset-md-1 col-12" style="display:flex;">
+            <img src="{{ image.url }}" style="max-height: 300px;"/>
+        </div>
+    </div>
+</div>
+</div>
+<div class="social-icons"><a href="{{ document_link }}"><i class="la la-download"></i></a></div>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="/static/js/grayscale.js"></script>
 </body>
 
 </html>

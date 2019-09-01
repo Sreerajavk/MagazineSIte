@@ -1,5 +1,7 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render , redirect
+from django.views.decorators.csrf import csrf_exempt
+
 from .models import *
 # Create your views here.
 
@@ -9,18 +11,27 @@ def index(request):
 
 
 #for home page
+@csrf_exempt
 def home(request):
 
-    #getting all the details of list of years
-    year_details=[]
+    if request.method == 'POST':
 
-    years = MagazineDetails.objects.all()
-    for year in years:
-        all_years = {}
-        all_years['id'] = year.id
-        all_years['year'] = year.year
-        year_details.append(all_years)
-    return  render(request , 'home2.html' , {'data': year_details})
+        #getting all the details of list of years
+        magazine_obj = MagazineDetails.objects.all()
+        details=[]
+        for magazine_info in magazine_obj:
+            dic = {}
+            dic['id'] = magazine_info.id
+            dic['year'] = magazine_info.year
+            dic['title'] = magazine_info.title
+            dic['editor_name'] = magazine_info.editor_name
+            dic['description'] = magazine_info.description
+            dic['document_link'] = magazine_info.document_link
+            dic['image'] = magazine_info.cover_image.url
+            details.append(dic)
+
+        return  JsonResponse({'data' : details})
+    return  render(request , 'home2.html')
 
 def getdetails(request ,id):
 
