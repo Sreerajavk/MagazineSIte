@@ -30,6 +30,7 @@ img, svg {
 #circle {
     position: absolute;
     left: 150px;
+    top:0px;
     width: 100px;
     flex: 1;
     z-index: 9999;
